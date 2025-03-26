@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="proceso.js" method="get">
+        <fieldset><legend>Login</legend>
+            <label>Rut:</label>
+            <input type="text" name="rut" size="12" maxlength="12"
+            placeholder="12345678-9" value="" required
+            autocomplete="off" /><br />
+            <label>Password:</label>
+            <input type="password" name="clave" size="12" 
+            maxlength="12" value="" autofocus />
+        </fieldset>
+        <!-- Práctica 
+            Generar un fieldset que tenga :
+            Direccion, #, comuna, foto de la casa.
+        -->
+        <fieldset><legend>Dirección</legend>
+            <label>Dirección:</label>
+            <input type="text" name="direccion" size="60" 
+            maxlength="60" placeholder="Psja. Milano ..." 
+            value="" /><br />
+            <label>Nro:</label>
+            <input type="number" name="numero" min="0" max="99999"
+            step="5" value="" /><br />
+            <label>Comuna:</label>
+            <select name="comuna">
+                <option value="1301">Santiago</option>
+                <option disabled>Maipú</option>
+                <option>Buin</option>
+                <option selected>San Bernardo</option>
+            </select><br />
+            <label>Foto Casa:</label>
+            <input type="file" name="foto" 
+            value="" /><br />
+        </fieldset> 
+        <fieldset>
+            <input type="submit" value="Enviar" 
+            name="btnEnviar" />
+        </fieldset>  
+    </form>  
+</body>
+</html>

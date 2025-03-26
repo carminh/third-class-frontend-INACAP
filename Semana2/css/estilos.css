@@ -1,0 +1,24 @@
+
+/* Selector de Etiqueta */
+body { font-family: calibri; background-color: rgb(223, 223, 202);}
+strong {color: red;}
+
+/*selector multiple*/
+h1, h2 {border: thin chocolate dashed;
+    background-color: rgb(115, 177, 228);
+    text-shadow: 4px 4px 4px grey ; }
+
+
+/*Selector descendente*/
+footer div p strong{color: rgb(224, 149, 171);}
+
+/*selector de hijos*/
+div > p {font-family: Courier;
+    color: rgb(46, 30, 10);}
+
+/*selector adyacente*/
+h2 + p {font-family: 'Times New Roman';
+        font-size: 0.5em;}
+
+/*selector de clases*/
+/*selector de */

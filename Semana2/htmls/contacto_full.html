@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de contacto</h1>
+    <form action="proceso.js" method="get" 
+            oninput="outTalla.value = inTalla.value" novalidate >
+        <fieldset><legend>Login</legend>
+            <label>Rut:</label>
+            <input type="text" name="rut" value="" maxlength="12"
+                    size="12" placeholder="12345678-9" 
+                    autocomplete="off" required />*<br />
+            <label>Password:</label>
+            <input type="password" name="pass" value="" 
+            maxlength="12" size="12" required />*<br />
+        </fieldset>
+        <fieldset><legend>Datos Personales</legend>
+            <!-- Nombre -->
+            <label>Nombre:</label>
+            <input type="text" name="nombre" value="" maxlength="50"
+                    size="50" placeholder="Ingresa tu nombre y apellido"
+                    autofocus /><br />
+            <!-- Dirección (Calle - Nro)-->
+            <label>Dirección (Calle / Nro):</label>
+            <input type="text" name="calle" value="" maxlength="50"
+                    size="50" placeholder="Calle donde vives" />
+            <input type="number" name="nro" value="" min="1" max="99999" 
+                    placeholder="nro" step="5"/><br />
+            <!-- Región / Comuna -->
+            <label>Comuna:</label>
+            <select name="comunas"><!-- multiple size="5"-->
+                <option selected disabled>Selecciona la comuna</option>
+                <optgroup label="Región Metropolitana">
+                    <option value="1301">Santiago</option>
+                    <option value="1302">Maipú</option>
+                    <option value="1304">La Cisterna</option>
+                    <option value="1308">Puente Alto</option>
+                </optgroup>
+                <optgroup label="Región de Valparaíso">
+                    <option value="0501">Valparaíso</option>
+                    <option value="0502">Viña del Mar</option>
+                    <option value="0504">Quilpué</option>
+                    <option value="0505">Villa Alemana</option>
+                </optgroup>
+            </select><br />
+            <label>Dirección de correo:</label>
+            <input type="email" name="correo" value="" maxlength="50"
+                    size="50" placeholder="hola@chao.cl" />
+        </fieldset>
+        <fieldset><legend>Datos Adicionales</legend>
+            <label>Fecha Nacimiento:</label>
+            <input type="date" name="fecNac" 
+                min="2024-04-01" max="2024-05-31" value="2024-04-11"/><br />
+            <label>Fecha y hora de tu viaje:</label>
+            <input type="datetime-local" name="fecViaje" /><br />
+            <label>Mes aniversario:</label>
+            <input type="month" name="mes" /><br />
+            <label>Semana Mechona:</label>
+            <input type="week" name="semana" /><br />
+            <label>Hora:</label>
+            <input type="time" name="hora" /><br />
+            <label>Web:</label>
+            <input type="url" name="url" /><br />
+            <label>Color:</label>
+            <input type="color" name="color" /><br />
+            <label>Buscar:</label>
+            <input type="search" name="buscar" /><br />
+            <label>Sube tu foto:</label>
+            <input type="file" name="foto" /><br />
+            <label>Talla de Calzado:</label>
+            <output name="outTalla" for="talla">10</output>
+            <input type="range" name="inTalla" min="10" max="50"
+                    value="10" id="talla"/><br />
+         </fieldset>
+         <fieldset><legend>¿Dónde viajarías?</legend>
+            <label>
+                <input type="checkbox" name="chkViaje" value="FRA" />
+                Francia
+            </label><br />
+            <label><input type="checkbox" name="chkViaje" value="ENG" />
+            Inglaterra</label><br />
+            <label><input type="checkbox" name="chkViaje" value="SPA"/>
+            España</label><br />
+            <label><input type="checkbox" name="chkViaje" value="ITA" />
+            Italia</label><br />
+         </fieldset>
+         <fieldset><legend>Con quién viajarías? (Solo 1)</legend>
+            <label>
+                <input type="radio" name="chkQuien" value="FRA" />
+                Francia
+            </label><br />
+            <input type="radio" name="chkQuien" value="ENG" />
+            <label>Inglaterra</label><br />
+            <label><input type="radio" name="chkQuien" value="SPA"/>
+            España</label><br />
+            <label><input type="radio" name="chkQuien" value="ITA" />
+            Italia</label><br />
+         </fieldset>
+
+            
+
+
+
+        <input type="submit" name="btn" value="Enviar" />
+    </form>
+
+
+</body>
+</html>

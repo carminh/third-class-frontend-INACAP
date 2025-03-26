@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><!-- Indico configuraciones -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Web</title>
+</head>
+<body><!-- Acá van los contenidos del HTML -->
+    <!--p>Estas <br /> es  <br /> <strong>mi web</strong></p-->
+    <header>
+        <h1>Inicios en HTML5</h1>
+    </header>
+    <hr />
+    <nav><!--.Acá debiera estar la barra de navegación-->
+        <ul><!-- Permite definir una lista-->
+            <li>HTML</li>
+            <li>Manuales</li>
+            <li><a href="htmls/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <hr />
+    <div>
+        <h2>Enlaces importantes</h2>
+        <p>Iacap es u istituto de educació superior que bla blaBLA</p>
+       <p>Visita <a href="http://www.inacap.cl">Inacap.cl</a></p> 
+    </div>
+    <section>
+        <article><!-- Musica a la web -->
+            <audio controls>
+                <source src="audio/VictorPiano.mp3" type="audio/mp3" />
+                <source src="audio/VictorPiano.ogg" type="audio/ogg" />
+            </audio>   
+        </article>
+        <article>
+            <video controls poster="image/oso.jpg" width="300">
+                <source src="video/movie.mp4" type="video/mp4" />
+            </video>
+        </article>
+        <article>
+            <iframe width="300" src="https://www.youtube.com/embed/J8U9czVT7tM?si=rigtSCJboUFvuYDj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+        <article>
+            <picture>
+                <source srcset="image/shaum6.jpg" media="(min-width:1100px)" />
+                <source srcset="image/shaum5.jpg" media="(min-width:1000px)" />
+                <source srcset="image/shaum4.jpg" media="(min-width:800px)" />
+                <source srcset="image/shaum3.jpg" media="(min-width:700px)" />
+                <source srcset="image/shaum2.jpg" media="(min-width:600px)" />
+                <source srcset="image/shaum1.jpg" media="(min-width:500px)" />
+                <img src="image/shaum1.jpg" alt="Ovejita linda" />
+            </picture>
+        </article>
+    </section>
+</body>
+</html>
